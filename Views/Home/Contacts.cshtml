@@ -1,0 +1,5 @@
+﻿@using DZ_1.Services
+@model SessionService
+
+<h3>Contact page</h3>
+<p>Количество посещений: @Model.Counters.FirstOrDefault(p => p.Key == "Contacts").Value</p>
